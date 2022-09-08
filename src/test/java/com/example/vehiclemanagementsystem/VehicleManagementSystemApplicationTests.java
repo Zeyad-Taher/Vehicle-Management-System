@@ -1,10 +1,10 @@
-package com.example.findcar;
+package com.example.vehiclemanagementsystem;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CarManagementSystemApplicationTests {
+class VehicleManagementSystemApplicationTests {
 
     @Test
     void contextLoads() {

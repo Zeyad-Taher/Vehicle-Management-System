@@ -1,13 +1,13 @@
-package com.example.findcar;
+package com.example.vehiclemanagementsystem;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CarManagementSystemApplication {
+public class VehicleManagementSystemApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CarManagementSystemApplication.class, args);
+        SpringApplication.run(VehicleManagementSystemApplication.class, args);
     }
 
 }
