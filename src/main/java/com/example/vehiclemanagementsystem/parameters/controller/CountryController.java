@@ -34,4 +34,15 @@ public class CountryController {
         countryService.delete(id);
         return "redirect:/countries";
     }
+    @GetMapping("/countries/edit/{id}")
+    public String edit(@PathVariable Integer id,Model model){
+        Country country=countryService.getById(id);
+        model.addAttribute("country",country);
+        return "parameters/countryEdit";
+    }
+    @RequestMapping(value = "/countries/update/{id}",method = {RequestMethod.GET,RequestMethod.PUT})
+    public String update(Country country){
+        countryService.save(country);
+        return "redirect:/countries";
+    }
 }
